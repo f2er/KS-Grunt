@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.m_header{
+    background:#FBA237;
+    height:60px;
+    line-height: 60px;
+}
+.m_header h1{
+    text-align: center;
+    font-size:36px;
+    color:#fff;
+    font-family: Georgia,"Times New Roman",Times,"Kai","Kaiti SC","KaiTi","BiauKai","楷体","楷体_GB2312",serif;
+}

@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/*
+ * 模块
+*/
+.m_box{
+    margin-bottom:20px;
+}
+
+.m_box h2{
+    font-family: Georgia,"Times New Roman",Times,"Kai","Kaiti SC","KaiTi","BiauKai","楷体","楷体_GB2312",serif;
+    font-size:24px;
+}
+.m_box p{
+    padding-left:20px;
+    font-family: Georgia,"Times New Roman",Times,"Songti SC","SimSun",serif;
+}
+
+.m_list{
+    font-family: Georgia,"Times New Roman",Times,"Songti SC","SimSun",serif;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 30px;
+}
+.m_list li{
+    padding:0 0 0 20px;
+}
