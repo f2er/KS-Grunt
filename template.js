@@ -63,7 +63,8 @@
 			"grunt-contrib-imagemin": "~0.3.0",
 			"grunt-contrib-htmlmin": "~0.5.4",
 			"grunt-contrib-watch": "~0.4.4",
-			"grunt-includes": "~0.3.5"
+			"grunt-includes": "~0.3.5",
+			"grunt-contrib-connect":"~0.5.0"
         },
       });
 
