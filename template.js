@@ -55,7 +55,6 @@
         node_version: '>= 0.8.0',
         devDependencies: {
 			"grunt": "~0.4.1",
-			"bower":"~1.2.7",
 			"grunt-contrib-uglify": "~0.2.2",
 			"grunt-contrib-cssmin": "~0.6.1",
 			"grunt-contrib-concat": "~0.3.0",
