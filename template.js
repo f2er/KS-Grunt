@@ -39,9 +39,8 @@
       init.prompt('author_name'),
       init.prompt('author_email'),
     ], function(err, props) {
-
       props.keywords = [];
-
+	  
       // 需要拷贝处理的文件，这句一般不用改它
       var files = init.filesToCopy(props);
 
@@ -53,7 +52,6 @@
         name: 'KS',
         version: '0.0.0-ignored',
         npm_test: 'grunt qunit',
-
         node_version: '>= 0.8.0',
         devDependencies: {
 			"grunt": "~0.4.1",
