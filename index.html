@@ -2,10 +2,80 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>ksGrunt示例模板</title>
-    <link href="../resource/assets/css/demo.min.css" rel="stylesheet">
+    <title>UED前端项目构建集成</title>
+    <link href="root/resource/assets/css/demo.min.css" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        html,body{
+            background: #F5F6F6;
+        }
+        .p_container{
+            width:700px;
+            margin:0 auto;
+            background: #fff;
+            border:1px solid #ccc;
+        }
+        .grunt-btn{
+            width:600px;
+            padding-top:20px;
+            margin:0 auto 20px;
+            /*margin:-106px 0 0 -300px;*/
+            display: block;
+            font-family: Georgia,"Times New Roman",Times,"Kai","Kaiti SC","KaiTi","BiauKai","楷体","楷体_GB2312",serif;
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 40px;
+            color:#555;
+            text-decoration: none;
+            /*position: absolute;
+            left:50%;
+            top:50%;*/
+        }
+        .grunt-btn:hover{
+            color:#333;;
+        }
+        .grunt-btn img{
+            width:90px;
+            height:106px;
+            vertical-align: middle;;
+        }
+        .m_box{
+            padding:0 20px;
+            font-family: Georgia,"Times New Roman",Times,"Songti SC","SimSun",serif;
+            font-size: 18px;
+            font-weight: 100;
+            line-height: 30px;
+            color: #2F2F2F;
+        }
+    </style>
 </head>
 <body>
-    <a href="/root/template/index.html">ksGrunt</a>
+    <div class="p_container">
+        <h1 class="grunt-btn">
+            <img src="grunt-logo.png" alt=""/>
+            UED前端项目构建集成包
+        </h1>
+        <!--m_box-->
+        <div class="m_box">
+            <h2>安装步骤：</h2>
+            <p>本套构建包基于node.js环境。<a href="http://nodejs.org/" target="_blank">下载nodeJS</a>，并默认安装</p>
+            <p>1：为了保证项目构建集成包统一管理，托管在github上，获取基础构建包时，请在git Bash中操作.</p>
+            <p>命令行:git clone https://github.com/f2er/grunt-init-ks.git ~/.grunt-init/ks</p>
+            <p>2：初始化项目模板，先确认本机中是否安装grunt-init，如没安装，执行 npm install -g grunt-init</p>
+            <p>3：切换到本地项目目录,如project，执行 grunt-init ks，其他按提示操作即可或直接Enter跳过.安装成功后，执行 npm install 直接回车，进入安装grunt 插件。整个前端基础构建包完成。</p>
+        </div>
+        <!--m_box-->
+        <!--m_box-->
+        <div class="m_box">
+            <h2>集成包功能插件：</h2>
+            <p></p>
+
+        </div>
+        <!--m_box-->
+    </div>
+
 </body>
 </html>
