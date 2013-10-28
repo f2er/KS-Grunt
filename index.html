@@ -9,6 +9,12 @@
             margin:0;
             padding:0;
         }
+        a{
+            color:#08C;
+        }
+        a:hover{
+            color:#f60;
+        }
         html,body{
             background: #F5F6F6;
         }
@@ -50,6 +56,11 @@
             line-height: 30px;
             color: #2F2F2F;
         }
+        .author{
+            text-align: right;
+            padding:0 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -60,8 +71,14 @@
         </h1>
         <!--m_box-->
         <div class="m_box">
+            <h2>必备软件：</h2>
+            <p>本套构建包基于node.js环境。</p>
+            <p><a href="http://nodejs.org/" target="_blank">nodeJS下载</a>、<a href="https://code.google.com/p/msysgit/downloads/list?q=full+installer+official+git" target="_blank">Git Bash下载</a></p>
+        </div>
+        <!--m_box-->
+        <!--m_box-->
+        <div class="m_box">
             <h2>安装步骤：</h2>
-            <p>本套构建包基于node.js环境。<a href="http://nodejs.org/" target="_blank">下载nodeJS</a>，并默认安装</p>
             <p>1：为了保证项目构建集成包统一管理，托管在github上，获取基础构建包时，请在git Bash中操作.</p>
             <p>命令行:git clone https://github.com/f2er/grunt-init-ks.git ~/.grunt-init/ks</p>
             <p>2：初始化项目模板，先确认本机中是否安装grunt-init，如没安装，执行 npm install -g grunt-init</p>
@@ -70,11 +87,34 @@
         <!--m_box-->
         <!--m_box-->
         <div class="m_box">
-            <h2>集成包功能插件：</h2>
-            <p></p>
-
+            <h2>集成包功能：</h2>
+            <p>包含CSS合并压缩、JS混淆压缩、模板页引入、图片优化压缩等。</p>
         </div>
         <!--m_box-->
+        <!--m_box-->
+        <div class="m_box">
+            <h2>集成包功能插件：</h2>
+            <p>
+                <a href="#">grunt-contrib-concat</a>
+            </p>
+            <p>
+                <a href="#">grunt-contrib-cssmin</a>
+            </p>
+            <p>
+                <a href="#">grunt-contrib-imagemin</a>
+            </p>
+            <p>
+                <a href="#">grunt-contrib-uglify</a>
+            </p>
+            <p>
+                <a href="#">grunt-includes</a>
+            </p>
+            <p>
+                <a href="#">grunt-contrib-watch</a>
+            </p>
+        </div>
+        <!--m_box-->
+        <p class="author">@情封</p>
     </div>
 
 </body>
