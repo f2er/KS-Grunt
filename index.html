@@ -60,6 +60,15 @@
             text-align: right;
             padding:0 20px;
         }
+        .code{
+            font-size: 14px;
+            padding: 0 10px;
+            color: #F8F8F8;
+            background: #181818;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 5px;
+        }
 
     </style>
 </head>
@@ -80,9 +89,9 @@
         <div class="m_box">
             <h2>安装步骤：</h2>
             <p>1：为了保证项目构建集成包统一管理，托管在github上，获取基础构建包时，请在git Bash中操作.</p>
-            <p>命令行:git clone https://github.com/f2er/grunt-init-ks.git ~/.grunt-init/ks</p>
-            <p>2：初始化项目模板，先确认本机中是否安装grunt-init，如没安装，执行 npm install -g grunt-init</p>
-            <p>3：切换到本地项目目录,如project，执行 grunt-init ks，其他按提示操作即可或直接Enter跳过.安装成功后，执行 npm install 直接回车，进入安装grunt 插件。整个前端基础构建包完成。</p>
+            <p>命令行:<span class="code">git clone https://github.com/f2er/grunt-init-ks.git ~/.grunt-init/ks</span></p>
+            <p>2：初始化项目模板，先确认本机中是否安装grunt-init，如没安装，执行 <span class="code">npm install -g grunt-init</span></p>
+            <p>3：切换到本地项目目录,如project，执行 <span class="code">grunt-init ks</span>，其他按提示操作即可或直接Enter跳过.安装成功后，执行 <span class="code">npm install</span> 直接回车，进入安装grunt 插件。整个前端基础构建包完成。</p>
         </div>
         <!--m_box-->
         <!--m_box-->
@@ -117,9 +126,9 @@
         <!--m_box-->
         <div class="m_box">
             <h2>静态资源管理：采用Bower包管理工具</h2>
-            <p>如本机中没有安装bower，可以在项目目录，在git Bash中操作 npm install  bower -g </p>
+            <p>如本机中没有安装bower，可以在项目目录，在git Bash中操作 <span class="code">npm install  bower -g</span> </p>
             <p>Bower 资源列表：<a href="http://sindresorhus.com/bower-components/">前端组件列表</a></p>
-            <p>通过bower除了可以下载官方的组件外，还可以下载本地组件、线上组件。只要通过简单的命令就可以实现资源统一管理.bower install path/to/**.js</p>
+            <p>通过bower除了可以下载官方上的插件外，还可以下载本地组件、团队线上组件。只要通过简单的命令就可以实现资源统一管理  <span class="code">bower install path/to/**.js</span></p>
         </div>
         <!--m_box-->
         <p class="author">@情封</p>
