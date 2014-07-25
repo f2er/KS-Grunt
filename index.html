@@ -1,139 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>UED前端项目构建集成</title>
-    <link href="root/resource/assets/css/demo.min.css" rel="stylesheet">
-    <style>
-        *{
-            margin:0;
-            padding:0;
-        }
-        a{
-            color:#08C;
-        }
-        a:hover{
-            color:#f60;
-        }
-        html,body{
-            background: #F5F6F6;
-        }
-        .p_container{
-            width:700px;
-            margin:0 auto;
-            background: #fff;
-            border:1px solid #ccc;
-        }
-        .grunt-btn{
-            width:600px;
-            padding-top:20px;
-            margin:0 auto 20px;
-            /*margin:-106px 0 0 -300px;*/
-            display: block;
-            font-family: Georgia,"Times New Roman",Times,"Kai","Kaiti SC","KaiTi","BiauKai","楷体","楷体_GB2312",serif;
-            font-size: 28px;
-            font-weight: bold;
-            line-height: 40px;
-            color:#555;
-            text-decoration: none;
-            /*position: absolute;
-            left:50%;
-            top:50%;*/
-        }
-        .grunt-btn:hover{
-            color:#333;;
-        }
-        .grunt-btn img{
-            width:90px;
-            height:106px;
-            vertical-align: middle;;
-        }
-        .m_box{
-            padding:0 20px;
-            font-family: Georgia,"Times New Roman",Times,"Songti SC","SimSun",serif;
-            font-size: 18px;
-            font-weight: 100;
-            line-height: 30px;
-            color: #2F2F2F;
-        }
-        .author{
-            text-align: right;
-            padding:0 20px;
-        }
-        .code{
-            font-size: 14px;
-            padding: 0 10px;
-            color: #F8F8F8;
-            background: #181818;
-            display: inline-block;
-            vertical-align: middle;
-            border-radius: 5px;
-        }
 
-    </style>
-</head>
-<body>
-    <div class="p_container">
-        <h1 class="grunt-btn">
-            <img src="grunt-logo.png" alt=""/>
-            UED前端项目构建集成包
-        </h1>
-        <!--m_box-->
-        <div class="m_box">
-            <h2>必备软件：</h2>
-            <p>本套构建包基于node.js环境。</p>
-            <p><a href="http://nodejs.org/" target="_blank">nodeJS下载</a>、<a href="https://code.google.com/p/msysgit/downloads/list?q=full+installer+official+git" target="_blank">Git Bash下载</a></p>
-        </div>
-        <!--m_box-->
-        <!--m_box-->
-        <div class="m_box">
-            <h2>安装步骤：</h2>
-            <p>1：为了保证项目构建集成包统一管理，托管在github上，获取基础构建包时，请在git Bash中操作.</p>
-            <p>命令行:<span class="code">git clone https://github.com/f2er/grunt-init-ks.git ~/.grunt-init/ks</span></p>
-            <p>2：初始化项目模板，先确认本机中是否安装grunt-init，如没安装，执行 <span class="code">npm install -g grunt-init</span></p>
-            <p>3：切换到本地项目目录,如project，执行 <span class="code">grunt-init ks</span>，其他按提示操作即可或直接Enter跳过.安装成功后，执行 <span class="code">npm install</span> 直接回车，进入安装grunt 插件。整个前端基础构建包完成。</p>
-        </div>
-        <!--m_box-->
-        <!--m_box-->
-        <div class="m_box">
-            <h2>集成包功能：</h2>
-            <p>包含CSS合并压缩、JS混淆压缩、模板页引入、图片优化压缩等。</p>
-        </div>
-        <!--m_box-->
-        <!--m_box-->
-        <div class="m_box">
-            <h2>集成包功能插件：</h2>
-            <p>
-                <a href="https://github.com/gruntjs/grunt-contrib-concat" target="_blank">grunt-contrib-concat</a>
-            </p>
-            <p>
-                <a href="https://github.com/gruntjs/grunt-contrib-cssmin" target="_blank">grunt-contrib-cssmin</a>
-            </p>
-            <p>
-                <a href="https://github.com/gruntjs/grunt-contrib-imagemin" target="_blank">grunt-contrib-imagemin</a>
-            </p>
-            <p>
-                <a href="https://github.com/gruntjs/grunt-contrib-uglify" target="_blank">grunt-contrib-uglify</a>
-            </p>
-            <p>
-                <a href="https://github.com/vanetix/grunt-includes" target="_blank">grunt-includes</a>
-            </p>
-            <p>
-                <a href="https://github.com/gruntjs/grunt-contrib-watch" target="_blank">grunt-contrib-watch</a>
-            </p>
-        </div>
-        <!--m_box-->
-        <!--m_box-->
-        <div class="m_box">
-            <h2>静态资源管理：采用Bower包管理工具</h2>
-            <p>如本机中没有安装bower，可以在项目目录，在git Bash中操作 <span class="code">npm install  bower -g</span> </p>
-            <p>Bower 资源列表：<a href="http://sindresorhus.com/bower-components/">前端组件列表</a></p>
-            <p>通过bower除了可以下载官方上的插件外，还可以下载本地组件、团队线上组件。只要通过简单的命令就可以实现资源统一管理  <span class="code">bower install path/to/**.js</span></p>
-            <p>更新：每需要一个插件就bower install就很繁琐，现在只要对项目中的bower.json文件中dependencies对象做一定的修改即可，最后执行一次bower install即可安装项目所需要的插件。</p>
-        </div>
-        <!--m_box-->
-        <p class="author">@情封</p>
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Grunt-init-ks : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Grunt-init-ks</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/f2er/grunt-init-ks">View on GitHub</a>
+
+          <h1 id="project_title">Grunt-init-ks</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/f2er/grunt-init-ks/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/f2er/grunt-init-ks/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
     </div>
 
-</body>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3>
+<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+
+<h3>
+<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Grunt-init-ks maintained by <a href="https://github.com/f2er">f2er</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
 </html>
